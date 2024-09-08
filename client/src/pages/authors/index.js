@@ -23,7 +23,7 @@ export default function Authors() {
 
     const useStyles = makeStyles({
         authorsContainer: {
-            backgroundImage: 'url("/img/library.jpeg")',
+            backgroundImage: 'url("/img/library.jpg")',
             backgroundRepeat: 'round',
             backgroundBlendMode: 'multiply, normal',
             minHeight: '100vh', 
