@@ -1,4 +1,4 @@
-//malith damsara
+
 const Book = require('../models/book');
 
 const getBook = async (req, res) => {

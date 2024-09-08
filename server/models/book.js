@@ -23,10 +23,7 @@ const BookSchema = new mongoose.Schema({
     type: Date,
     required: false,
   },
-  genre: {
-    type: String,
-    required: false,
-  },
+
   copies: {
     type: Number,
     required: true,

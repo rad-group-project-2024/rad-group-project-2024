@@ -6,7 +6,7 @@ import Login from "./login";
 import Register from "./register";
 import { makeStyles } from "@mui/styles";
 
-const backgroundImage = 'url("/img/library.jpeg")';
+const backgroundImage = 'url("/img/library.jpg")';
 
 const useStyles = makeStyles((theme) => ({
   authPage: {

@@ -32,7 +32,6 @@ const validationSchema = yup.object({
   ISBN: yup.string('Enter ISBN').required('ISBN is required'),
   publisher: yup.string('Enter publisher'),
   datePublished: yup.date('Enter date published'),
-  genre: yup.string('Enter genre'),
   copies: yup.number('Enter copies').required('No. of copies are required')
   
 });
@@ -55,7 +54,6 @@ const Add = ({handleClose, updateTrigger}) => {
     ISBN: '',
     publisher: '',
     datePublished: '',
-    genre: false,
     copies: '',
   });
 
@@ -146,19 +144,6 @@ const Add = ({handleClose, updateTrigger}) => {
         error={formik.touched.datePublished && Boolean(formik.errors.datePublished)}
         helperText={formik.touched.datePublished && formik.errors.datePublished}
         InputLabelProps={{ shrink: true }} 
-        className={classes.textField}
-      />
-
-      <TextField
-        fullWidth
-        id="genre"
-        name="genre"
-        label="Genre"
-        value={formik.values.genre}
-        onChange={formik.handleChange}
-        onBlur={formik.handleBlur}
-        error={formik.touched.genre && Boolean(formik.errors.genre)}
-        helperText={formik.touched.genre && formik.errors.genre}
         className={classes.textField}
       />
 

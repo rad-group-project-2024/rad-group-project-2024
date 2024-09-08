@@ -119,7 +119,7 @@ export default function Sidebar() {
           <Box sx={{ m: 2 }} className={classes.userInfoContainer}>
             <Avatar
               alt={user.name}
-              src="/img/avatar.png"
+              src="/img/book.jpg"
               className={classes.avatar}
             />
             
@@ -136,7 +136,6 @@ export default function Sidebar() {
 
             <Navitem path="/books" name="Books" />
             <Navitem path="/authors" name="Authors" />
-            <Navitem path="/genres" name="Genres" />
             <Navitem path="/borrowers" name="Borrowers" />
             <Navitem path="/users" name="Members" />
             </Box>

@@ -5,13 +5,12 @@ import { makeStyles } from '@mui/styles';
 export default function Dashboard() {
   const useStyles = makeStyles({
     genresContainer: {
-      backgroundImage: 'url("/img/library.jpeg")',
-      backgroundRepeat: 'round',
-      backgroundBlendMode: 'multiply, normal',
-      minHeight: '100vh',
-      padding: '20px',
-      color: '#ffffff',
-      textAlign: 'left',
+    backgroundImage: 'url("/img/library.jpg")',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
     },
     header: {
       display: 'flex',
@@ -43,7 +42,7 @@ export default function Dashboard() {
       fontSize: '100px',
       fontWeight: 'bold',
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      color: '#fff',
+      color: '#ffffff',
       textAlign:'center'
     },
   });
