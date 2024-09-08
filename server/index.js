@@ -10,7 +10,6 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Routes
-const genreRouter = require('./routes/genreRouter');
 const authRouter = require('./routes/authRouter');
 const userRouter = require('./routes/userRouter');
 const bookRouter = require('./routes/bookRouter');
@@ -60,7 +59,6 @@ app.use('/api/user', userRouter);
 app.use('/api/book', bookRouter);
 app.use('/api/author', authorRouter);
 app.use("/api/borrower", borrowerRouter);
-app.use('/api/genre', genreRouter);
 
 app.get('/', (req, res) => res.send('Welcome to Library Management System'));
 
