@@ -1,4 +1,3 @@
-//malith
 const Book = require('../models/book');
 
 const getBook = async (req, res) => {
