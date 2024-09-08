@@ -107,11 +107,6 @@ const Table = ({ trigger }) => {
         size: 150
       },
       {
-        accessorKey: 'genre',
-        header: 'Genre',
-        size: 150
-      },
-      {
         accessorKey: 'copies',
         header: 'Copies',
         size: 150
