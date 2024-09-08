@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useFormik } from 'formik';
-import * as yup from 'yup';
 import { Button, TextField } from '@mui/material';
-import axios from 'axios';
 import { makeStyles } from '@mui/styles';
+import axios from 'axios';
+import { useFormik } from 'formik';
+import React, { useEffect, useState } from 'react';
+import * as yup from 'yup';
 
 import { backendUrl } from '../../data';
 
@@ -32,7 +32,6 @@ const validationSchema = yup.object({
   nationality: yup.string('Enter nationality').required('Nationality is required'),
   dateOfBirth: yup.date('Enter date of birth').required('Date of Birth is required'),
   startDateOfPublishing: yup.string('Enter date published'),
-  genre: yup.string('Enter the genres'),
   noOfBooksWritten: yup.string('Enter number').required('No. of books are required'),
 });
 
@@ -147,19 +146,6 @@ const Update = (data) => {
           onBlur={formik.handleBlur}
           error={formik.touched.startDateOfPublishing && Boolean(formik.errors.startDateOfPublishing)}
           helperText={formik.touched.startDateOfPublishing && formik.errors.startDateOfPublishing}
-          className={classes.textField}
-        />
-
-        <TextField
-          fullWidth
-          id="genre"
-          name="genre"
-          label="Genre"
-          value={formik.values.genre}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          error={formik.touched.genre && Boolean(formik.errors.genre)}
-          helperText={formik.touched.genre && formik.errors.genre}
           className={classes.textField}
         />
 

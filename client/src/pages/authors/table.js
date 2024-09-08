@@ -1,12 +1,12 @@
-import React, { useMemo, useState, useEffect } from 'react';
 import { MaterialReactTable } from 'material-react-table';
+import React, { useEffect, useMemo, useState } from 'react';
 
-import { Box, Button, Dialog, DialogContent, DialogContentText, DialogTitle, DialogActions, ListItemIcon, MenuItem, Typography, Tooltip, IconButton } from '@mui/material';
-import { AccountCircle, Send, Delete, Edit } from '@mui/icons-material';
-import Update from './update';
-import { backendUrl } from '../../data';
+import { AccountCircle, Delete, Edit, Send } from '@mui/icons-material';
+import { Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, ListItemIcon, MenuItem, Tooltip } from '@mui/material';
 import axios from 'axios';
 import { format } from 'date-fns';
+import { backendUrl } from '../../data';
+import Update from './update';
 
 
 const Table = ({ trigger }) => {
@@ -105,11 +105,6 @@ const Table = ({ trigger }) => {
       {
         accessorKey: 'startDateOfPublishing',
         header: 'Start Date of Publishing',
-        size: 150
-      },
-      {
-        accessorKey: 'genre',
-        header: 'Genres',
         size: 150
       },
       {
