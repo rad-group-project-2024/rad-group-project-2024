@@ -67,7 +67,7 @@ const Add = ({handleClose, updateTrigger}) => {
       try {
         await addAuthorApi(values);
 
-        handleClose()
+        handleClose()  
         updateTrigger()
       } catch (error) {
         if (error.response && error.response.status === 403) {

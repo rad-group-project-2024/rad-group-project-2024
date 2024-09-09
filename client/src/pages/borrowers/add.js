@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { useFormik } from "formik";
-import * as yup from "yup";
 import { Button, TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import axios from "axios";
+import { useFormik } from "formik";
+import React, { useState } from "react";
+import * as yup from "yup";
 
 import { backendUrl } from "../../data";
 
@@ -43,7 +43,7 @@ const validationSchema = yup.object({
     .string("Enter your email")
     .email("Enter a valid email")
     .required("Email is required"),
-  phone: yup.string("Enter contact number"),
+  phone: yup.number("Enter contact number"),
 });
 
 // const apiUrl = backendUrl + 'borrower/add'
