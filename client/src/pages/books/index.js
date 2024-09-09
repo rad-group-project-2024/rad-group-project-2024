@@ -22,10 +22,11 @@ export default function Books() {
   const useStyles = makeStyles({
     booksContainer: {
       backgroundImage: 'url("/img/library.jpg")',
-      backgroundRepeat: 'round',
+      backgroundSize: "cover",
+   
       backgroundBlendMode: 'multiply, normal',
       minHeight: '100vh',
-      padding: '20px', 
+      padding: '20px',
       color: '#ffffff',
       textAlign: 'left',
     },

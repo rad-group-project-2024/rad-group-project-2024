@@ -23,7 +23,7 @@ export default function Borrowers() {
     const useStyles = makeStyles({
       borrowersContainer: {
         backgroundImage: 'url("/img/library.jpg")',
-        backgroundRepeat: 'round',
+        backgroundSize: "cover",
 
         backgroundBlendMode: "multiply, normal",
         minHeight: "100vh", 
