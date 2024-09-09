@@ -162,7 +162,7 @@ const Add = ({handleClose, updateTrigger}) => {
       />
       
         <Button color="primary" variant="contained" fullWidth type="submit">
-          Submit
+          SUBMIT
         </Button>
       </form>
     </div>

@@ -20,6 +20,7 @@ export default function Dashboard() {
     sectionTitle: {
       fontSize: '50px',
       marginBottom: '15px',
+      
     },
     addButton: {
       color: '#ffffff',

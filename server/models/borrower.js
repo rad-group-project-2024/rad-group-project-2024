@@ -3,18 +3,7 @@ const mongoose = require("mongoose");
 
 // Creating borrower schema
 const BorrowerSchema = new mongoose.Schema({
-  // userID: {
-  //   type: String,
-  //   required: true,
-  // },
-  // firstName: {
-  //   type: String,
-  //   required: true,
-  // },
-  // lastName: {
-  //   type: String,
-  //   required: true,
-  // },
+  
   name: {
     type: String,
     required: true,

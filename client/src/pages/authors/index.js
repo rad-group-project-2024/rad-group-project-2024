@@ -23,7 +23,7 @@ export default function Authors() {
 
     const useStyles = makeStyles({
         authorsContainer: {
-            backgroundImage: 'url("/img/library.jpeg")',
+            backgroundImage: 'url("/img/library.jpg")',
             backgroundRepeat: 'round',
             backgroundBlendMode: 'multiply, normal',
             minHeight: '100vh', 
@@ -40,7 +40,7 @@ export default function Authors() {
             fontSize: "40px",
             marginBottom: "20px",
             marginTop: "20px",
-            paddingLeft: "25px"
+            backgroundColor:"#2196F3"
         },
         addButton: {
             color: '#ffffff',

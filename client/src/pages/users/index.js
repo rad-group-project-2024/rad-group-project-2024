@@ -26,7 +26,7 @@ export default function Users() {
 
   const useStyles = makeStyles({
     usersContainer: {
-      backgroundImage: 'url("/img/library.jpeg")',
+      backgroundImage: 'url("/img/library.jpg")',
       backgroundRepeat: 'round',
       // background: `
       // linear-gradient(to bottom, #272643, #2f2e52),
@@ -46,7 +46,7 @@ export default function Users() {
       fontSize: "40px",
       marginBottom: "20px",
       marginTop: "20px",
-      paddingLeft: "25px"
+      backgroundColor:"#2196F3"
     },
     addButton: {
       color: '#ffffff',

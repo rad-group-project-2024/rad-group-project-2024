@@ -1,5 +1,4 @@
 import * as React from 'react'
-
 import Table from './table'
 import Add from './add'
 import { Box, Typography, Button, Dialog, DialogContent, } from '@mui/material'
@@ -22,7 +21,7 @@ export default function Books() {
   }
   const useStyles = makeStyles({
     booksContainer: {
-      backgroundImage: 'url("/img/library.jpeg")',
+      backgroundImage: 'url("/img/library.jpg")',
       backgroundRepeat: 'round',
       backgroundBlendMode: 'multiply, normal',
       minHeight: '100vh',
@@ -39,7 +38,7 @@ export default function Books() {
       fontSize: "40px",
       marginBottom: "20px",
       marginTop: "20px",
-      paddingLeft: "25px"
+      backgroundColor:"#2196F3"
     },
     addButton: {
       color: '#ffffff',

@@ -22,7 +22,7 @@ export default function Borrowers() {
 
     const useStyles = makeStyles({
       borrowersContainer: {
-        backgroundImage: 'url("/img/library.jpeg")',
+        backgroundImage: 'url("/img/library.jpg")',
         backgroundRepeat: 'round',
 
         backgroundBlendMode: "multiply, normal",
@@ -40,7 +40,7 @@ export default function Borrowers() {
         fontSize: "40px",
         marginBottom: "20px",
         marginTop: "20px",
-        paddingLeft: "25px",
+       backgroundColor:"#2196F3"
       },
       addButton: {
         color: "#ffffff",
