@@ -25,7 +25,7 @@ export default function Books() {
       backgroundRepeat: 'round',
       backgroundBlendMode: 'multiply, normal',
       minHeight: '100vh',
-      padding: '20px',
+      padding: '20px', 
       color: '#ffffff',
       textAlign: 'left',
     },
