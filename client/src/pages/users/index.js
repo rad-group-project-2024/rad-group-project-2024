@@ -27,7 +27,7 @@ export default function Users() {
   const useStyles = makeStyles({
     usersContainer: {
       backgroundImage: 'url("/img/library.jpg")',
-      backgroundRepeat: 'round',
+      backgroundSize: "cover",
       // background: `
       // linear-gradient(to bottom, #272643, #2f2e52),
       // radial-gradient(circle, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0) 70%)`,
