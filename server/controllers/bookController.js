@@ -1,7 +1,7 @@
 const Book = require('../models/book');
 
 const getBook = async (req, res) => {
-    const bookId = req.params.id;
+    const bookId = req.params.id;  //   /books/:id
 
     try {
         const book = await Book.findById(bookId);
